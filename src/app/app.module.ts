@@ -1,11 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
+import { environment } from '../environments/environment';
+
+import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { MaterialModule } from './material.module';
+
+import { RoutingModule } from './/routing.module';
+
+
 
 
 @NgModule({
@@ -14,9 +21,10 @@ import { MaterialModule } from './material.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
     CoreModule,
-    MaterialModule,
-    SharedModule
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
