@@ -10,7 +10,7 @@ export const environment = {
     authDomain: 'ng-fire-chat-a46c6.firebaseapp.com',
     databaseURL: 'https://ng-fire-chat-a46c6.firebaseio.com',
     projectId: 'ng-fire-chat-a46c6',
-    storageBucket: '',
+    storageBucket: 'ng-fire-chat-a46c6.appspot.com',
     messagingSenderId: '25077333961'
   }
 };
